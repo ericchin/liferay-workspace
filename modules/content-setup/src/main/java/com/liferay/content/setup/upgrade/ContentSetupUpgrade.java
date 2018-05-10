@@ -1,6 +1,6 @@
 package com.liferay.content.setup.upgrade;
 
-import com.liferay.content.setup.upgrade.v1_0_0.ContentSetupUpgrade_1_0_0;
+import com.liferay.content.setup.upgrade.v1_0_0.AddWorkflowDefinition;
 import com.liferay.portal.scripting.executor.provider.ScriptBundleProvider;
 import com.liferay.portal.upgrade.registry.UpgradeStepRegistrator;
 
@@ -21,7 +21,7 @@ public class ContentSetupUpgrade implements UpgradeStepRegistrator {
 		String bundleName = bundle.getSymbolicName();
 
 		registry.register(
-			bundleName, "0.0.0", "1.0.0", new ContentSetupUpgrade_1_0_0());
+			bundleName, "0.0.0", "1.0.0", new AddWorkflowDefinition());
 	}
 
 	@Reference(target = "(component.name=*ContentSetupDependencyManager)")
