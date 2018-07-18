@@ -1,0 +1,26 @@
+configure(subprojects.findAll { !it.subprojects }) {
+	afterEvaluate { project ->
+		if (project.path.startsWith(":modules:override:")) {
+			def overrideCopy = copySpec {
+				from(project.jar)
+				into 'osgi/marketplace/override'
+			}
+
+			def distBundleDestinationDir = distBundle.destinationDir.toString();
+
+			def jarDirectory =
+				distBundleDestinationDir.concat('/osgi/modules/').concat(
+					project.jar.archiveName)
+
+			task cleanUpOverrideFiles(type: Delete) {
+				delete jarDirectory
+			}
+
+			distBundle {
+				with overrideCopy
+			}
+
+			distBundle.finalizedBy(cleanUpOverrideFiles)
+		}
+	}
+}
