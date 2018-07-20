@@ -1,0 +1,207 @@
+{
+  "availableLanguageIds": [
+    "en_US"
+  ],
+  "defaultLanguageId": "en_US",
+  "fields": [
+    {
+      "label": {
+        "en_US": "Product"
+      },
+      "options": [
+        {
+          "value": "HE",
+          "label": {
+            "en_US": "Home Edition"
+          }
+        },
+        {
+          "value": "BE",
+          "label": {
+            "en_US": "Business Edition"
+          }
+        },
+        {
+          "value": "EE",
+          "label": {
+            "en_US": "Enterprise Edition"
+          }
+        }
+      ],
+      "predefinedValue": {
+        "en_US": []
+      },
+      "style": {
+        "en_US": ""
+      },
+      "tip": {
+        "en_US": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "multiple": false,
+      "name": "select2890",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "select"
+    },
+    {
+      "label": {
+        "en_US": "Version"
+      },
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "en_US": "1.0"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "en_US": "2.0"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "en_US": "3.0"
+          }
+        }
+      ],
+      "predefinedValue": {
+        "en_US": []
+      },
+      "style": {
+        "en_US": ""
+      },
+      "tip": {
+        "en_US": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "multiple": false,
+      "name": "select3864",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "select"
+    },
+    {
+      "label": {
+        "en_US": "Areas of Interest"
+      },
+      "options": [
+        {
+          "value": "website",
+          "label": {
+            "en_US": "Website"
+          }
+        },
+        {
+          "value": "collaboration",
+          "label": {
+            "en_US": "Collaboration"
+          }
+        },
+        {
+          "value": "intranet",
+          "label": {
+            "en_US": "Intranet"
+          }
+        }
+      ],
+      "predefinedValue": {
+        "en_US": []
+      },
+      "style": {
+        "en_US": ""
+      },
+      "tip": {
+        "en_US": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "multiple": true,
+      "name": "select4831",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "select"
+    },
+    {
+      "label": {
+        "en_US": "Competitors"
+      },
+      "options": [
+        {
+          "value": "acme",
+          "label": {
+            "en_US": "ACME"
+          }
+        },
+        {
+          "value": "sevencogs",
+          "label": {
+            "en_US": "SevenCogs"
+          }
+        },
+        {
+          "value": "freeplus",
+          "label": {
+            "en_US": "FreePlus"
+          }
+        }
+      ],
+      "predefinedValue": {
+        "en_US": []
+      },
+      "style": {
+        "en_US": ""
+      },
+      "tip": {
+        "en_US": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "multiple": true,
+      "name": "select5929",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "select"
+    },
+    {
+      "label": {
+        "en_US": "Prospect Name"
+      },
+      "predefinedValue": {
+        "en_US": ""
+      },
+      "style": {
+        "en_US": ""
+      },
+      "tip": {
+        "en_US": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "text1993",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    }
+  ]
+}
