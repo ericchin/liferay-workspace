@@ -2,10 +2,12 @@ package com.liferay.content.setup.upgrade;
 
 import com.liferay.content.setup.common.AddDocumentType;
 import com.liferay.content.setup.common.AddWorkflowDefinition;
+import com.liferay.content.setup.common.SetupGoogleAnalytics;
 import com.liferay.document.library.kernel.service.DLFileEntryTypeLocalService;
 import com.liferay.dynamic.data.mapping.util.DDM;
 import com.liferay.dynamic.data.mapping.util.DDMBeanTranslator;
 import com.liferay.portal.kernel.module.framework.ModuleServiceLifecycle;
+import com.liferay.portal.kernel.service.GroupLocalService;
 import com.liferay.portal.kernel.util.Portal;
 import com.liferay.portal.scripting.executor.provider.ScriptBundleProvider;
 import com.liferay.portal.upgrade.registry.UpgradeStepRegistrator;
@@ -45,6 +47,10 @@ public class ContentSetupUpgrade implements UpgradeStepRegistrator {
 			bundleName, "1.0.0", "1.0.1",
 			new AddDocumentType(
 				_ddm, _ddmBeanTranslator, _dlFileEntryTypeLocalService));
+
+		registry.register(
+			bundleName, "1.0.1", "1.0.2",
+			new SetupGoogleAnalytics(_groupLocalService));
 	}
 
 	private BundleContext _bundleContext;
@@ -57,6 +63,9 @@ public class ContentSetupUpgrade implements UpgradeStepRegistrator {
 
 	@Reference
 	private DLFileEntryTypeLocalService _dlFileEntryTypeLocalService;
+
+	@Reference
+	private GroupLocalService _groupLocalService;
 
 	@Reference
 	private Portal _portal;
