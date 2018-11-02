@@ -1,0 +1,3 @@
+Bundle-Name: log4j-extender
+Bundle-SymbolicName: log4j.extender
+Bundle-Version: 1.0.0
