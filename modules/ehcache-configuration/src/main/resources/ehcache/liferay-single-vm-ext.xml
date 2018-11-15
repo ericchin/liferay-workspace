@@ -1,0 +1,12 @@
+<ehcache
+	dynamicConfig="true"
+	monitoring="off"
+	name="liferay-single-vm"
+	updateCheck="false"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ehcache.xsd"
+	>
+
+	<!-- PLACEHOLDER -->
+
+</ehcache>
