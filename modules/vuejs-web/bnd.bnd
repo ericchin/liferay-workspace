@@ -1,0 +1,12 @@
+Bundle-Name: vuejs-web
+Bundle-SymbolicName: vuejs.web
+Bundle-Version: 1.0.0
+Export-Package: vuejs.web.constants
+Web-ContextPath: /vuejs-web
+-includeresource: package.json
+-jsp: *.jsp,*.jspf
+-plugin.jsp: com.liferay.ant.bnd.jsp.JspAnalyzerPlugin
+-plugin.npm: com.liferay.ant.bnd.npm.NpmAnalyzerPlugin
+-plugin.resourcebundle: com.liferay.ant.bnd.resource.bundle.ResourceBundleLoaderAnalyzerPlugin
+-plugin.sass: com.liferay.ant.bnd.sass.SassAnalyzerPlugin
+-sass: *
