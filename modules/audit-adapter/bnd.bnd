@@ -1,0 +1,3 @@
+Bundle-Name: audit-adapter
+Bundle-SymbolicName: audit.adapter
+Bundle-Version: 1.0.0
